@@ -1,0 +1,9 @@
+{
+	"name":"AeroTechStorage",
+	"author":"ArkeousAero",
+	"version":"1.0.0",
+	"title":"AeroTechStorage",
+	"homepage":"http://github.com/ArkeousAero/AeroTechStorage",
+	"description":"Item packaging to make transportation and storage more convenient!",
+	"dependencies": ["base >= 0.11.16","? CORE-DyTech-Core","? bobores","? bobplates"]
+}

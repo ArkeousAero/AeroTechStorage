@@ -1,0 +1,5 @@
+AeroTech Storage is a mod for factorio. Its primary purpose is to add compact versions of items and fluids to make storage and transport more convenient.
+
+Note that this repository is not the mod itself, but a shell script for generating the mod.
+
+To add more packageable items, add the icon of the item to the src/graphics-in folder. Make sure that the name of the icon file is consistent with the name of the item.
