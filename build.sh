@@ -4,15 +4,24 @@
 version=1.0.0
 root_dir=AeroTechStorage_${version}
 rm -r ${root_dir}
+rm ${root_dir}.zip
 mkdir ${root_dir}
 
-#copy files
+#copy root files
 cp src/info.json ${root_dir}
 cp src/data.lua ${root_dir}
-cp src/group.lua ${root_dir}
-cp src/item.lua ${root_dir}
-cp src/recipe.lua ${root_dir}
-cp src/technology.lua ${root_dir}
+
+cp LICENSE ${root_dir}
+
+#make prototypes directory
+prototypes=${root_dir}/prototypes
+mkdir ${prototypes}
+
+#copy prototype files
+cp src/group.lua ${prototypes}
+cp src/item.lua ${prototypes}
+cp src/recipe.lua ${prototypes}
+cp src/technology.lua ${prototypes}
 
 #config file
 config=${root_dir}/config.lua
@@ -60,3 +69,6 @@ done
 
 #finish config file
 echo "}" >> ${config}
+
+#zip
+zip -r AeroTechStorage_1.0.0.zip AeroTechStorage_1.0.0/*
